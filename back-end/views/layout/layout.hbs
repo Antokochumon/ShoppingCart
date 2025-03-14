@@ -15,20 +15,6 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 
     <title>Shopping Cart</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
-        }
-        main {
-            flex: 1; /* Allow the main content to grow and fill the remaining space */
-            display: flex;
-            align-items: center; /* Center content vertically */
-            justify-content: center; /* Center content horizontally */
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
 
@@ -38,9 +24,7 @@
         {{>user-header}}
     {{/if}}
 
-    <main>
-        {{{body}}}
-    </main>
+    {{{body}}}
 
     <!-- Scripts (Load in Correct Order) -->
 
