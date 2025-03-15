@@ -1,9 +1,8 @@
-<header id="head"> 
+<header id="head">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-<a class="navbar-brand" href="/" style="font-weight: 700; font-family: 'Times New Roman', Times, serif; color: black; font-size: 34px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 0 0 2px black; letter-spacing: 1px; text-decoration: none; -webkit-text-stroke: 0.5px black;">
-    Shopping Cart
-</a>
-
+        <a class="navbar-brand" href="/" style="font-weight: 700; font-family: 'Times New Roman', Times, serif; color: black; font-size: 34px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 0 0 2px black; letter-spacing: 1px; text-decoration: none; -webkit-text-stroke: 0.5px black;">
+            Shopping Cart
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,6 +57,20 @@
 </header>
 
 <style>
+    /* Make the header fixed */
+    #head {
+        position: fixed; /* Fix the header at the top */
+        top: 0; /* Stick to the top */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it stays above other content */
+    }
+
+    /* Add padding to the body to prevent content from being hidden behind the fixed header */
+    body {
+        padding-top: 80px; /* Adjust this value based on the height of your header */
+    }
+
     /* Navbar style enhancements */
     .navbar {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for navbar */
@@ -143,8 +156,8 @@
             padding: 8px 16px;
         }
         .navbar-brand {
-                font-size: 26px !important; /* Smaller font size for mobile */
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 1px black; /* Adjust text shadow */
-            }
+            font-size: 26px !important; /* Smaller font size for mobile */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 1px black; /* Adjust text shadow */
+        }
     }
 </style>
